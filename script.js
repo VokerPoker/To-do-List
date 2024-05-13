@@ -6,6 +6,7 @@ function addTask() {
   }
     else if (inputBox.value === "One Piece") {
     window.location.href = "https://jut.su/oneepiece/";
+    }
   else {
     let li = document.createElement("li");
     li.innerHTML = inputBox.value;
