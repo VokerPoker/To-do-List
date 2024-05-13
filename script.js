@@ -3,7 +3,12 @@ const listContainer = document.getElementById("list-container");
 function addTask() {
   if (inputBox.value === "") {
     alert("You must write something!");
-  } else if (inputBox.value === "One Piece") {
+  }
+  else if (!isNaN(inputBox.value)) {
+    window.location.href =
+      "https://jut.su/oneepiece/episode-" + inputBox.value + ".html";
+  }
+  else if (inputBox.value === "One Piece") {
     window.location.href = "https://jut.su/oneepiece/";
   } else {
     let li = document.createElement("li");
